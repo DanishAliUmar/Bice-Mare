@@ -13,7 +13,7 @@
             Enjoy a delicious meal with us and get 20% off your total bill this New year!
         </p>
     </div>
-    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5">
+    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5 sticky top-0 z-40 bg-theme_white">
         <div class="max-w-[1700px] mx-auto flex items-center justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-10 xl:flex-row-reverse">
             <div class="xl:block hidden flex-1">
                 <div class="flex items-center gap-5 justify-end">
@@ -22,9 +22,9 @@
                         <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
                         <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
                     </div>
-                    <button class="border border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                    <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
                         Reservation
-                    </button>
+                    </a>
                 </div>
             </div>
             <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
@@ -42,9 +42,9 @@
             <div class="flex items-center gap-5">
                 <div class="hidden sm:block xl:hidden">
                     <div class="flex items-center justify-end flex-1">
-                        <button class="border border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                        <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
                             Reservation
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="lg:hidden block" onclick="open_hamburger()">
@@ -59,7 +59,9 @@
         <p class="text-center text-grey1 text-lg sm:text-xl font-normal">Best Quality</p>
         <h2 class="text-center font-light text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-[50px] md:leading-[110px] mt-3 text-theme_black tracking-wide">About Us</h2>
     </section>
-    <section class="bg-cover bg-center bg-no-repeat w-full h-[480px] sm:h-[560px] md:h-[600px]" style="background-image: url(/assets/images/aboutusbanner.png);"></section>
+    <section class="bg-cover bg-center bg-no-repeat w-full h-[480px] sm:h-[560px] md:h-[600px]" style="background-image: url(/assets/images/aboutusbanner.png);">
+        <div class="h-full w-full bg-theme_black/40 "></div>
+    </section>
     <section class="mt-20 sm:mt-40 border-y border-grey2 py-10 sm:py-12 md:py-20">
         <div class="flex gap-10 sm:gap-6 max-w-[1700px] mx-auto w-full px-6 sm:px-10 md:px-12 lg:px-20 lg:flex-row flex-col">
             <div class="flex gap-10 sm:gap-6 flex-1 w-full sm:flex-row flex-col">
@@ -155,9 +157,9 @@
             <p class="text-center text-grey2 text-lg sm:text-xl font-normal">Reservation</p>
             <h2 class="text-center font-normal text-3xl sm:text-4xl md:text-[46px] mt-3 text-theme_white">Book Your <span class="text-primary">Reservation</span> Today</h2>
             <p class="text-theme_white text-md sm:text-lg text-center font-sans max-w-[730px] mx-auto font-light mt-3">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
-            <button class="custom_shadow border tracking-wide border-primary flex items-center justify-center rounded-lg px-[22px] text-xl py-[8px] cursor-pointer bg-primary text-theme_white mx-auto mt-10 font-normal">
+            <a href="./contact-us.html" class="custom_shadow max-w-max border tracking-wide border-primary flex items-center justify-center rounded-lg px-[22px] text-xl py-[8px] cursor-pointer bg-primary text-theme_white mx-auto mt-10 font-normal">
                 Reservation
-            </button>
+            </a>
         </div>
     </section>
     <section class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 py-28 overflow-hidden">
@@ -256,10 +258,10 @@
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
-                    <div class="flex items-center gap-[5px] mt-[16px]">
+                    <a href="./manu.html" class="flex items-center gap-[5px] mt-[16px]">
                         <p class="text-primary text-lg md:text-[19px] cursor-pointer">See More</p>
                         <svg class="fill-primary h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>                              
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col-span-2 xl:col-span-1">
@@ -286,7 +288,7 @@
 
     <!-- All Popups -->
     
-    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0" id="main_hamburger">
+    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0 z-50" id="main_hamburger">
         <div class="flex items-center justify-end h-full w-full">
             <div class="max-w-96 w-[83%] bg-theme_white h-full">
                 <div class="flex items-center justify-end p-6">
@@ -295,25 +297,25 @@
                     </span>
                 </div>
                 <div class="w-full flex flex-col gap-[6px]">
-                    <a href="/" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer">
+                    <a href="/" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer">
                         Home
                     </a>
-                    <a href="./manu.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./manu.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Menu
                     </a>
-                    <a href="./gallery.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./gallery.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Gallery
                     </a>
-                    <a href="./membership.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./membership.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Memberships
                     </a>
-                    <a href="./contact-us.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./contact-us.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Contact
                     </a>
                     <div class="p-4">
-                        <button class="border border-primary transition-all bg-primary text-theme_white tracking-wide flex items-center justify-center rounded-lg px-[17px] text-lg py-[7px] cursor-pointer">
+                        <a href="./contact-us.html" class="border max-w-max border-primary transition-all bg-primary text-theme_white tracking-wide flex items-center justify-center rounded-lg px-[17px] text-lg py-[7px] cursor-pointer">
                             Reservation
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
