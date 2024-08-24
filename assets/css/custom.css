@@ -23,11 +23,6 @@ body {
     box-shadow: 0px 4px 6px #26262640;
 }
 
-/* @media (max-width: 1024px) {
-    .swiper2 .swiper-slide-active{
-        transform: scale(1.2) !important;
-    }
-} */
 
 @media (min-width: 1024px) {
     .swiper2 .swiper-slide-next{
@@ -39,4 +34,20 @@ body {
 .custom_rotate{
     transform: rotate(180deg) !important;
     transition: all 0.1s ease-in-out !important;
+}
+
+
+.animate-shimmer {
+    background: linear-gradient(90deg, rgba(165, 165, 165, 0.24) 25%, rgba(255, 255, 255, 0.31) 50%, rgba(165, 165, 165, 0.228) 75%);
+    background-size: 1000px 100%;
+}
+
+.swiper-button-prev-custom:hover svg{
+    fill: white;
+    transition: all 0.2s;
+}
+
+.swiper-button-next-custom:hover svg{
+    fill: white;
+    transition: all 0.2s;
 }

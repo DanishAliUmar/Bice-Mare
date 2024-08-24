@@ -1,16 +1,15 @@
 let value = true;
-let video_play_button = document.getElementById('video_play_button');
 let main_hamburger = document.getElementById('main_hamburger');
 let video = document.getElementById('video');
 
-video_play_button.addEventListener('click', () => {
+function video_play_button() {
     let video_main_popup = document.getElementById('video_main_popup');
 
-    if (video_play_button) {
+    if (video_main_popup) {
         video_main_popup.classList.add('!block');
         video.play();
     }
-})
+}
 
 function cancle_video_popup() {
     let video_main_popup = document.getElementById('video_main_popup');
@@ -22,23 +21,21 @@ function cancle_video_popup() {
 
 // Counting Numbers
 
-const counters = document.querySelectorAll('.value');
-const speed = 400;
+let allSpans = document.querySelectorAll('.value');
+let timing = 5000;
 
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('akhi');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        }else{
-          counter.innerText = value;
-        } 
-   }
-   animate();
+allSpans.forEach(AllSpan => {
+    let startValue = 0;
+    let endValue = parseInt(AllSpan.getAttribute('increaseValue'));
+    
+    let duration = Math.floor(timing / endValue);
+    let counter = setInterval(() => {
+        startValue += 1;
+        AllSpan.textContent = startValue;
+        if (startValue == endValue) {
+            clearInterval(counter);
+        }
+    }, duration);
 });
 
 // FAQs
@@ -104,3 +101,38 @@ function formSubmit() {
         alert('Message sent successfully!');
     }
 }
+
+// sticky bgColor
+
+
+function hello(e) {
+
+    document.querySelectorAll('#hell').forEach(function(el) {
+        el.classList.remove('!bg-white', '!bg-primary', '!text-theme_white');
+    });
+
+    let vvvv = e.closest('#hell');
+    if (vvvv) {
+        vvvv.classList.add('!bg-primary', '!text-theme_white');
+    }
+}
+
+// 
+
+function blogCategory(e) {
+    let main_category_button = e.closest('#main_category_button');
+    let blogCategoryButton = main_category_button.querySelector('#blogCategoryButton');
+    let changing_text_main = document.getElementById('changing_text_main');
+    let changing_text = document.getElementById('changing_text');
+    let Archiving_main = document.getElementById('Archiving_main');
+
+
+    changing_text_main.classList.add('!block');
+    changing_text.innerHTML = blogCategoryButton.innerText
+    Archiving_main.classList.add('!block')
+}
+
+
+// 
+
+
