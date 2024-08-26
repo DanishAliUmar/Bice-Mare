@@ -1,24 +1,3 @@
-let value = true;
-let main_hamburger = document.getElementById('main_hamburger');
-let video = document.getElementById('video');
-
-function video_play_button() {
-    let video_main_popup = document.getElementById('video_main_popup');
-
-    if (video_main_popup) {
-        video_main_popup.classList.add('!block');
-        video.play();
-    }
-}
-
-function cancle_video_popup() {
-    let video_main_popup = document.getElementById('video_main_popup');
-    if (video_main_popup) {
-        video_main_popup.classList.remove('!block');
-        video.pause();
-    }
-}
-
 // Counting Numbers
 
 let allSpans = document.querySelectorAll('.value');
@@ -135,4 +114,32 @@ function blogCategory(e) {
 
 // 
 
+let reservation_popup_main = document.getElementById('reservation_popup_main');
 
+function reservation_popup() {
+    reservation_popup_main.classList.add('!block');
+}
+
+function reservation_popup_close() {
+    reservation_popup_main.classList.remove('!block');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        const section = document.querySelector('.section');
+
+        if (header && section) {
+            const headerBottom = header.getBoundingClientRect().bottom;
+            const sectionTop = section.getBoundingClientRect().top;
+            
+            if (sectionTop <= headerBottom) {
+                section.style.backgroundColor = '#FDEBEC';
+            } else {
+                section.style.backgroundColor = '#FFFFFF';
+            }
+        } else {
+            console.error('Header or Section element not found.');
+        }
+    });
+});

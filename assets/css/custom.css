@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'SentaSans';
-    src: url('/src/SentaSans_Font/SentaSans_Light.ttf') format('truetype');
+    src: url('../../src/SentaSans_Font/SentaSans_Light.ttf') format('truetype');
     font-weight: 300;
 }
 @font-face {
     font-family: 'SentaSans';
-    src: url('/src/SentaSans_Font/SentaSans_Regular.ttf') format('truetype');
+    src: url('../../src/src/SentaSans_Font/SentaSans_Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face {
     font-family: 'SentaSans';
-    src: url('/src/SentaSans_Font/SentaSans_Bold.ttf') format('truetype');
+    src: url('../../src/src/SentaSans_Font/SentaSans_Bold.ttf') format('truetype');
     font-weight: 600;
 }
 
@@ -50,4 +50,25 @@ body {
 .swiper-button-next-custom:hover svg{
     fill: white;
     transition: all 0.2s;
+}
+
+.swiper-button-prev-review:hover svg{
+    fill: white !important;
+    transition: all 0.2s;
+}
+
+.swiper-button-next-review:hover svg{
+    fill: white !important;
+    transition: all 0.2s;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.section {
+    transition: background-color 0.3s ease;
 }
